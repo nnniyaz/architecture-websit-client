@@ -10,7 +10,7 @@ import classes from './Main.module.css';
 const Main = () => {
     return (
         <div className={classes.main}>
-            {/* <Slider /> */}
+            <Slider />
             <Projects />
             {/* <Highlights /> */}
             {/* <Quotes /> */}
