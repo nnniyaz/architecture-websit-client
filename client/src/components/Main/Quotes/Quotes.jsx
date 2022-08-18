@@ -5,10 +5,11 @@ const Quotes = () => {
     return (
         <div className={classes.page}>
             <div className={classes.intro} style={{ backgroundImage: `url(${background})` }}>
-                <div className={classes.content}>
-                    <div className={classes.title}>People</div>
+                <div className={classes.grandient}>
+                    <div className={classes.title}>PEOPLE</div>
                     <div className={classes.topic}>
-                        HEYDAR ALIYEV CULTURAL CENTER
+                        <div className={classes.topictext}>We are dedicated to providing our clients with the best that design has to offer.</div>
+                        <div className={classes.author}>Frank Gehry</div>
                     </div>
                 </div>
             </div>

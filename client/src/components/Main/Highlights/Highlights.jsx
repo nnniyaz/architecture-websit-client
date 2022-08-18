@@ -42,7 +42,7 @@ const Highlights = () => {
                     <img className={classes.image} src={highlight} alt="highlights" />
                 </div>
 
-                <div className={classes.block} style={{ display: 'flex' }}>
+                <div className={classes.block} style={{ display: 'flex', alignSelf: 'flex-end' }}>
                     <img
                         className={classes.image}
                         src={halfHighlight}
