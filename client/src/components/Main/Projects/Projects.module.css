@@ -1,0 +1,41 @@
+.page {
+    padding-top: 50px;
+    font-family: 'Inter', sans-serif;
+}
+
+.head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title {
+    font-family: 'Oswald', sans-serif;
+    font-size: 70px;
+    font-weight: 700;
+}
+
+.view {
+    font-weight: 700;
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer {
+    margin-top: 80px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.more {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+}
