@@ -12,10 +12,10 @@ const Main = () => {
         <div className={classes.main}>
             <Slider />
             <Projects />
-            {/* <Highlights /> */}
-            {/* <Quotes /> */}
-            {/* <Team /> */}
-            {/* <Office /> */}
+            <Highlights />
+            <Quotes />
+            <Team />
+            <Office />
         </div>
     )
 }

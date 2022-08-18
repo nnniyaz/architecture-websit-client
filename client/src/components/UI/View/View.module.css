@@ -1,32 +1,32 @@
-.page {
-    padding-top: 50px;
-    font-family: 'Inter', sans-serif;
-}
-
-.head {
+.view {
+    margin-top: 80px;
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: flex-end;
 }
 
-.title {
-    font-family: 'Oswald', sans-serif;
-    font-size: 70px;
+.innerview {
+    display: flex;
+}
+
+.viewText {
+    font-family: 'Inter', sans-serif;
     font-weight: 700;
+    padding: 0 10px 0 5px;
 }
 
-.view {
-    font-weight: 700;
+.icon {
+    width: 25px;
 }
 
-.view {
+.innerview {
     display: flex;
     position: relative;
     color: black;
     cursor: pointer;
 }
 
-.view:after {
+.innerview:after {
     content: '';
     position: absolute;
     width: 100%;
@@ -39,18 +39,7 @@
     transition: transform 0.25s ease-out;
 }
 
-.view:hover:after {
+.innerview:hover:after {
     transform: scaleX(1);
     transform-origin: bottom left;
-}
-
-.list {
-    display: flex;
-    flex-direction: column;
-}
-
-.row {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
 }

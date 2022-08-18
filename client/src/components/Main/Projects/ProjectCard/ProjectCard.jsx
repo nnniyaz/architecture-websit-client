@@ -1,24 +1,30 @@
 import classes from './ProjectCard.module.css';
-import card from '../../../../assets/images/card.webp';
+import card from '../../../../assets/images/project-card.webp';
+import arrow from '../../../../assets/svgs/arrow.svg';
 
-const ProjectCard = () => {
+const ProjectCard = ({ data }) => {
     return (
         <div className={classes.cell}>
-            <img className={classes.image} src={card} alt="project" />
+            <div className={classes.imageBlock}>
+                <img className={classes.image} src={card} alt="project" />
+                <div className={classes.link}>
+                    <img className={classes.icon} src={arrow} alt="icon" />
+                </div>
+            </div>
 
             <div className={classes.info}>
-                <div className={classes.index}>01</div>
+                <div className={classes.index}>{data.index}</div>
                 <div className={classes.details}>
-                    <div className={classes.projectName}>Canggu White House</div>
+                    <div className={classes.projectName}>{data.name}</div>
                     <div className={classes.description}>
-                        Our intent is to be unclassifiable in a cluttered agency landscape.
+                        {data.description}
                     </div>
                     <div className={classes.bottomInfo}>
                         <div className={classes.general}>
-                            <div className={classes.year}>2022</div>
-                            <div className={classes.location}>Bali</div>
+                            <div className={classes.year}>{data.year}</div>
+                            <div className={classes.location}>{data.location}</div>
                         </div>
-                        <div className={classes.type}>Residential</div>
+                        <div className={classes.type}>{data.type}</div>
                     </div>
                 </div>
             </div>
