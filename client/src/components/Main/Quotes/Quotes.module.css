@@ -1,7 +1,7 @@
 .page {
     margin-top: 20px;
     padding-top: 50px;
-    font-family: 'Inter', sans-serif;
+    /* font-family: 'Inter', sans-serif; */
 }
 
 .intro {
@@ -9,33 +9,40 @@
     height: 75vh;
     background-position: center;
     background-size: cover;
+    color: white;
 }
 
 .grandient {
     width: 100%;
     height: 100%;
-
-}
-
-.content {
-    width: 50%;
-    height: 100%;
-    margin: 0 150px;
-    color: white;
+    background-color: rgba(79, 79, 79, 0.5);
     display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
+    justify-content: space-around;
 }
 
 .title {
-    font-weight: 600;
+    width: 40%;
+    font-family: 'Oswald', sans-serif;
+    font-size: 67px;
+    padding-top: 50px;
 }
 
 .topic {
-    margin-top: 250px;
-    font-size: 120px;
-    font-family: 'Oswald', sans-serif;
+    align-self: flex-end;
+    padding-bottom: 50px;
+    width: 40%;
+    font-family: 'Inter', sans-serif;
+}
+
+.topictext {
+    width: 100%;
+    font-size: 67px;
     font-weight: 700;
     line-height: 100%;
-    letter-spacing: -2px;
+}
+
+.author {
+    margin-top: 50px;
+    width: 30%;
+    font-size: 23px;
 }
