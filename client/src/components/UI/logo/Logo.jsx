@@ -1,9 +1,9 @@
 import s from './Logo.module.scss'
 
-const Logo = () => {
+const Logo = ({color}) => {
     return (
         <div className={s.logo}>
-            <span>baroque</span>
+            <span style={{color: color || '#000'}}>baroque</span>
         </div>
     )
 }

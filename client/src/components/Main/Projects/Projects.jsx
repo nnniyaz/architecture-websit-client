@@ -50,7 +50,7 @@ const Projects = () => {
                 <div className={classes.row}>
                     {
                         data.map(card =>
-                            <ProjectCard data={card} />
+                            <ProjectCard key={card.index} data={card} />
                         )
                     }
                 </div>
