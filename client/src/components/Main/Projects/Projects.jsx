@@ -1,7 +1,44 @@
 import classes from './Projects.module.css';
 import ProjectCard from './ProjectCard/ProjectCard';
+import { useState } from 'react';
+import View from '../../UI/View/View';
 
 const Projects = () => {
+    const [data, setData] = useState([
+        {
+            index: '01',
+            name: 'Canggu White House',
+            description: 'Our intent is to be unclassifiable in a cluttered agency landscape.',
+            year: 2022,
+            location: 'Bali',
+            type: 'Residential'
+        },
+        {
+            index: '02',
+            name: 'Canggu White House',
+            description: 'Our intent is to be unclassifiable in a cluttered agency landscape.',
+            year: 2022,
+            location: 'Bali',
+            type: 'Residential'
+        },
+        {
+            index: '03',
+            name: 'Canggu White House',
+            description: 'Our intent is to be unclassifiable in a cluttered agency landscape.',
+            year: 2022,
+            location: 'Bali',
+            type: 'Residential'
+        },
+        {
+            index: '04',
+            name: 'Canggu White House',
+            description: 'Our intent is to be unclassifiable in a cluttered agency landscape.',
+            year: 2022,
+            location: 'Bali',
+            type: 'Residential'
+        },
+    ]);
+
     return (
         <div className={classes.page}>
             <div className={classes.head}>
@@ -11,19 +48,15 @@ const Projects = () => {
 
             <div className={classes.list}>
                 <div className={classes.row}>
-                    <ProjectCard />
-                    <ProjectCard />
-                </div>
-                <div className={classes.row}>
-                    <ProjectCard />
-                    <ProjectCard />
+                    {
+                        data.map(card =>
+                            <ProjectCard data={card} />
+                        )
+                    }
                 </div>
             </div>
 
-            <div className={classes.footer}>
-                <div className={classes.more}>VIEW MORE</div>
-            </div>
-
+            <View text='VIEW MORE' />
         </div>
     );
 }
