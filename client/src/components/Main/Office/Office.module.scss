@@ -39,21 +39,29 @@
 
             .contact {
                 margin-top: 30px;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                align-items: flex-start;
 
-                span {
-                    margin-right: 20px;
-                    font-family: 'Inter', sans-serif;
-                    font-size: 14px;
-                    opacity: 0.6;
-                    font-weight: 500;
+                div {
+                    margin-bottom: 30px;
+
+                    span {
+                        margin-right: 20px;
+                        font-family: 'Inter', sans-serif;
+                        font-size: 14px;
+                        opacity: 0.6;
+                        font-weight: 500;
+                    }
                 }
-                        }
+            }
         }
 
-        > div {
+        >div {
             width: 48%;
 
-            
+
             img {
                 width: 100%;
             }
