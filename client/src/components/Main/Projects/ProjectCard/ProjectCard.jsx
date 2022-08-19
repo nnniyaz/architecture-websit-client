@@ -10,7 +10,9 @@ const ProjectCard = ({ data }) => {
     return (
         <div className={classes.cell}>
             <div className={classes.imageBlock} onMouseEnter={() => setEntered(true)} onMouseLeave={() => setEntered(false)}>
-                <img className={classes.image} src={card} alt="project" />
+                <div
+                    className={classes.image}
+                    style={{ backgroundImage: `url(${card})` }} />
                 <div className={classes.link}>
                     <img className={classes.icon} src={entered ? arrowWhite : arrow} alt="icon" />
                 </div>
