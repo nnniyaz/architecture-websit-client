@@ -14,6 +14,8 @@ import Restore from './components/pages/Restore/Restore';
 import PersistLogin from './components/PersistLogin';
 import RequireAuth from './components/RequireAuth';
 import { AuthProvider } from './context/auth-provider';
+import { Provider } from 'react-redux';
+import store from './redux/store'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
