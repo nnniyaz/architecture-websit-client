@@ -17,28 +17,30 @@ import { AuthProvider } from './context/auth-provider';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <BrowserRouter>
-    <AuthProvider>
-      <Routes>
-        <Route element={<App />}>
-          <Route path='/' element={<Main />}></Route>
-        </Route>
+  <Provider store={store}>
+    <BrowserRouter>
+      <AuthProvider>
+        <Routes>
+          <Route element={<App />}>
+            <Route path='/' element={<Main />}></Route>
+          </Route>
 
-        <Route path='admin/login' element={<Login />} />
-        <Route path='admin/registration' element={<Registration />} />
-        <Route path='admin/restore' element={<Restore />} />
-        <Route path='admin/reset/:email/:id/:link' element={<Reset />} />
+          <Route path='admin/login' element={<Login />} />
+          <Route path='admin/registration' element={<Registration />} />
+          <Route path='admin/restore' element={<Restore />} />
+          <Route path='admin/reset/:email/:id/:link' element={<Reset />} />
 
-        <Route element={<PersistLogin />}>
-          <Route element={<RequireAuth />}>
-            <Route element={<Layout />}>
-              <Route path='/admin' element={<Admin />} />
-              <Route path='/admin/users' element={<Users />} />
+          <Route element={<PersistLogin />}>
+            <Route element={<RequireAuth />}>
+              <Route element={<Layout />}>
+                <Route path='/admin' element={<Admin />} />
+                <Route path='/admin/users' element={<Users />} />
+              </Route>
             </Route>
           </Route>
-        </Route>
-      </Routes>
-    </AuthProvider>
-  </BrowserRouter>
+        </Routes>
+      </AuthProvider>
+    </BrowserRouter>
+  </Provider>
 );
 
