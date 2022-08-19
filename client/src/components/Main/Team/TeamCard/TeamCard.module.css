@@ -1,0 +1,33 @@
+.card {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 40px;
+    border-bottom: 1px solid black;
+}
+
+.image {
+    width: 500px;
+}
+
+.fullname {
+    margin-top: 50px;
+    font-weight: 600;
+    font-size: 40px;
+}
+
+.position {
+    margin-top: 25px;
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.contacts {
+    margin-top: 10px;
+    display: flex;
+    font-size: 18px;
+}
+
+.nickname {
+    margin-right: 30px;
+}

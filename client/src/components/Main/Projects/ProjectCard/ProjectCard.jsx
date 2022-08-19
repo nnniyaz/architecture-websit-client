@@ -1,14 +1,18 @@
 import classes from './ProjectCard.module.css';
 import card from '../../../../assets/images/project-card.webp';
 import arrow from '../../../../assets/svgs/arrow.svg';
+import arrowWhite from '../../../../assets/svgs/arrow-white.svg';
+import { useState } from 'react';
 
 const ProjectCard = ({ data }) => {
+    const [entered, setEntered] = useState(false);
+
     return (
         <div className={classes.cell}>
-            <div className={classes.imageBlock}>
+            <div className={classes.imageBlock} onMouseEnter={() => setEntered(true)} onMouseLeave={() => setEntered(false)}>
                 <img className={classes.image} src={card} alt="project" />
                 <div className={classes.link}>
-                    <img className={classes.icon} src={arrow} alt="icon" />
+                    <img className={classes.icon} src={entered ? arrowWhite : arrow} alt="icon" />
                 </div>
             </div>
 
