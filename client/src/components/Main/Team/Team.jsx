@@ -1,5 +1,5 @@
 import classes from './Team.module.css';
-import avatar from '../../../assets/images/avatar.jpg';
+import View from '../../UI/View/View';
 import { useState } from 'react';
 import TeamCard from './TeamCard/TeamCard';
 
@@ -41,6 +41,8 @@ const Team = () => {
                     )
                 }
             </div>
+
+            <View text='VIEW ALL MEMBERS' />
         </div>
     );
 }

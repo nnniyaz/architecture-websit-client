@@ -45,7 +45,7 @@
 }
 
 .imageBlock:hover>div {
-    background-color: orange;
+    background-color: black;
     transition: 0.2s linear;
 }
 
