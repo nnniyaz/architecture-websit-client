@@ -1,7 +1,5 @@
 import { useState } from 'react';
-import classes from './Row.module.css'
-import cog from '../../../../assets/svgs/cog.svg'
-import trash from '../../../../assets/svgs/trash.svg'
+import classes from './Row.module.css';
 
 
 const Row = ({ data, process, remove }) => {

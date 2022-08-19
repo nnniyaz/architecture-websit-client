@@ -26,7 +26,6 @@ const Users = () => {
         const response = await axios.get('/api/user/users', config);
         setUsers(response.data);
         setIsErr(false);
-        console.log(users)
     }
 
     return (

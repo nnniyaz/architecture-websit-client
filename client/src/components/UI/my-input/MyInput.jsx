@@ -1,9 +1,9 @@
 import { useState } from 'react';
 import s from './MyInput.module.scss'
 
-const MyInput = ({data, register, errors}) => {
+const MyInput = ({ data, register, errors }) => {
   const [isFocused, setFocused] = useState(false)
-    
+
   let getOptions = (options) => {
     let resOpt = {};
     for (let key in options) {

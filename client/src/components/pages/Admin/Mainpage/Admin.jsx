@@ -21,11 +21,6 @@ const Admin = () => {
             <div className={classes.container}>
                 <div className={classes.header}>
                     <div className={classes.title}>Dashboard</div>
-                    {/* <div className={classes.sortbar}>
-                        <div className={classes.sortbtn} onClick={setSortType}>New</div>
-                        <div className={classes.sortbtn} onClick={setSortType}>Processed</div>
-                        <div className={classes.sortbtn} onClick={setSortType}>Deleted</div>
-                    </div> */}
                 </div>
                 <div className={classes.numbers}>
                     <div
