@@ -7,18 +7,21 @@ const Team = () => {
 
     const [data, setData] = useState([
         {
+            id: 1,
             fullname: 'Laura Gaudi',
             position: 'Principal + Architect',
             nickname: '@laura.draw',
             email: 'laura@gaudi-arch.com'
         },
         {
+            id: 2,
             fullname: 'Laura Gaudi',
             position: 'Principal + Architect',
             nickname: '@laura.draw',
             email: 'laura@gaudi-arch.com'
         },
         {
+            id: 3,
             fullname: 'Laura Gaudi',
             position: 'Principal + Architect',
             nickname: '@laura.draw',
@@ -37,7 +40,7 @@ const Team = () => {
             <div className={classes.staff}>
                 {
                     data.map(person =>
-                        <TeamCard data={person} />
+                        <TeamCard key={person.id} data={person} />
                     )
                 }
             </div>
