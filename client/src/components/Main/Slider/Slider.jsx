@@ -5,6 +5,8 @@ import { useState } from 'react';
 
 const Slider = () => {
     const [swiperRef, setSwiperRef] = useState();
+    const pagination = swiperRef?.pagination?.$el[0];
+    console.log(pagination);
 
     return (
       <div className={s.slider}>

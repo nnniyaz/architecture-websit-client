@@ -14,14 +14,23 @@
         display: flex;
         justify-content: space-between;
         align-items: stretch;
+        width: 100%;
         margin-top: 50px;
+
+        .map {
+            border: 2px solid rgba(0, 0, 0, 0.2);
+            
+            iframe {
+                border: none;
+            }
+        }
 
         .info {
             border-bottom: 2px solid rgba(0, 0, 0, 0.5);
 
             h3 {
                 font-family: 'Inter', sans-serif;
-                font-size: 30px;
+                font-size: 45px;
                 margin-bottom: 20px;
             }
 

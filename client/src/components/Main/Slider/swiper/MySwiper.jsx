@@ -1,4 +1,4 @@
-import { useSwiper, Swiper, SwiperSlide } from 'swiper/react';
+import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import s from './MySwiper.module.scss'
 import s1 from '../../../../assets/images/slider/1.jpg'
@@ -6,7 +6,7 @@ import s2 from '../../../../assets/images/slider/2.jpg'
 import s3 from '../../../../assets/images/slider/3.jpg'
 import s4 from '../../../../assets/images/slider/4.jpg'
 import s5 from '../../../../assets/images/slider/5.jpg'
-import { Autoplay } from "swiper";
+import { Autoplay, Pagination } from "swiper";
 
 const MySwiper = ({setSwiperRef}) => {
   const slides = [s1, s2, s3, s4, s5]
@@ -27,7 +27,7 @@ const MySwiper = ({setSwiperRef}) => {
         delay: 3000,
         disableOnInteraction: false,
       }}
-      modules={[Autoplay]}
+      modules={[Autoplay, Pagination]}
     >
       {slides.map((i) => (
         <SwiperSlide key={i}>
