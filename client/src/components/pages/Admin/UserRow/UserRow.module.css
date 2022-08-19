@@ -1,0 +1,12 @@
+.row {
+    display: flex;
+    padding: 20px;
+    font-family: 'Inter', sans-serif;
+}
+
+.cell {
+    justify-content: center;
+    align-self: center;
+    display: flex;
+    width: 33%;
+}
