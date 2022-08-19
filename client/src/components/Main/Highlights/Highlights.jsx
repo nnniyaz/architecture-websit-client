@@ -15,9 +15,11 @@ const Highlights = () => {
             <div className={classes.intro} style={{ backgroundImage: `url(${background})` }}>
                 <div className={classes.grandient}>
                     <div className={classes.content}>
-                        <div className={classes.title}>PROJECT HIGLIGHT</div>
                         <div className={classes.topic}>
                             HEYDAR ALIYEV CULTURAL CENTER
+                        </div>
+                        <div className={classes.title}>
+                            PROJECT HIGLIGHT
                         </div>
                     </div>
                 </div>
@@ -42,12 +44,12 @@ const Highlights = () => {
                         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda nam, non, itaque sequi suscipit dolores quo, mollitia voluptatum atque laborum quidem fuga a? Blanditiis, consequuntur possimus delectus aut nobis consequatur.
                     </div>
                     <MyButton
-                    onClick={() => dispatch(setOpenPopup(true))}
-                    style={{
-                        background: '#000',
-                        color: '#fff',
-                        marginTop: '30px'
-                    }}
+                        onClick={() => dispatch(setOpenPopup(true))}
+                        style={{
+                            background: '#000',
+                            color: '#fff',
+                            marginTop: '30px'
+                        }}
                     >Оставить заявку</MyButton>
                 </div>
 

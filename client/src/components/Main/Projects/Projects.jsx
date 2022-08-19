@@ -42,7 +42,7 @@ const Projects = () => {
     return (
         <div className={classes.page}>
             <div className={classes.head}>
-                <div className={classes.title}>PROJECT</div>
+                <div className={classes.title}>PROJECTS</div>
                 <div className={classes.view}>VIEW ALL</div>
             </div>
 

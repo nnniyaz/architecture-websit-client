@@ -33,3 +33,31 @@
     flex-wrap: wrap;
     justify-content: space-between;
 }
+
+@media only screen and (max-width: 600px) {
+    .page {
+        margin: 0 -150px;
+        margin-top: 50px;
+    }
+
+    .title {
+        margin: 0 20px;
+    }
+
+    .categories {
+        margin-top: 50px;
+        margin-left: 20px;
+        justify-content: flex-start;
+    }
+
+    .category {
+        font-size: 15px;
+        margin-right: 25px;
+    }
+
+    .staff {
+        flex-direction: column;
+    }
+
+
+}

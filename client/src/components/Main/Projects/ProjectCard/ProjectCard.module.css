@@ -99,3 +99,17 @@
 .year {
     margin-right: 20px;
 }
+
+@media only screen and (max-width: 600px) {
+    .cell {
+        width: 100%;
+    }
+
+    .index {
+        padding-left: 0;
+    }
+
+    .projectName {
+        margin-top: 0;
+    }
+}

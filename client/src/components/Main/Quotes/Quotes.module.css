@@ -46,3 +46,40 @@
     width: 30%;
     font-size: 23px;
 }
+
+@media only screen and (max-width: 600px) {
+    .page {
+        margin: 0 -150px;
+    }
+
+    .intro {
+        margin: 0;
+        height: 50vh;
+        width: 100%;
+    }
+
+    .grandient {
+        flex-direction: column;
+    }
+
+    .title,
+    .topic {
+        margin: 0;
+        width: 100%;
+    }
+
+    .title {
+        margin: 0 20px;
+        font-size: 40px;
+    }
+
+    .topictext {
+        padding: 20px;
+        font-size: 23px;
+    }
+
+    .author {
+        width: 100%;
+        margin: 20px;
+    }
+}
