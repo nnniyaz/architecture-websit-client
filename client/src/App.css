@@ -7,3 +7,8 @@ html {
     padding: 0;
     box-sizing: border-box;
 }
+
+ymaps[class*="controls-pane"],
+    ymaps[class*="copyrights-pane"] {
+        display: none;
+    }
