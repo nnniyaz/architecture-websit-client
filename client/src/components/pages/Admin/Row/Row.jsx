@@ -13,19 +13,9 @@ const Row = ({ data, process, remove }) => {
 
     return (
         <div className={classes.row}>
-            <div className={classes.cell}>{data.number}</div>
-            <div className={classes.cell}>{data.date}</div>
-            <div className={classes.cell}>{data.status}</div>
-            <div className={classes.cell}>
-                <div className={classes.iconbar}>
-                    <img className={classes.icon} src={cog} alt="icon" onClick={() => process(data)} />
-                </div>
-            </div>
-            <div className={classes.cell}>
-                <div className={classes.iconbar}>
-                    <img className={classes.icon} src={trash} alt="icon" onClick={() => remove(data)} />
-                </div>
-            </div>
+            <div className={classes.cell}>{data.name}</div>
+            <div className={classes.cell}>{data.email}</div>
+            <div className={classes.maincell}>{data.message}</div>
         </div>
     );
 }

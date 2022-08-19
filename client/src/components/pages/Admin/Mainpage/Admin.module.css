@@ -69,21 +69,15 @@
 }
 
 .cell {
-    justify-content: center;
+    justify-content: flex-start;
     align-self: center;
     display: flex;
     width: 20%;
 }
 
-.cell:first-child {
+.maincell {
     justify-content: flex-start;
-}
-
-.cell:nth-child(4) {
-    justify-content: flex-end;
-}
-
-
-.cell:nth-child(5) {
-    justify-content: flex-end;
+    align-self: center;
+    width: 50%;
+    margin-left: 20px;
 }
