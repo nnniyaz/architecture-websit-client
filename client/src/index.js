@@ -31,7 +31,6 @@ root.render(
           <Route path='admin/registration' element={<Registration />} />
           <Route path='admin/restore' element={<Restore />} />
           <Route path='admin/reset/:email/:id/:link' element={<Reset />} />
-
           <Route element={<PersistLogin />}>
             <Route element={<RequireAuth />}>
               <Route element={<Layout />}>
@@ -45,4 +44,4 @@ root.render(
     </BrowserRouter>
   </Provider>
 );
-
+          

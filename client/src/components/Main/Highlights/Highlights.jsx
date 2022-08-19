@@ -3,8 +3,13 @@ import background from '../../../assets/images/heydar-aliyev.jpg';
 import highlight from '../../../assets/images/highlight.jpg';
 import halfHighlight from '../../../assets/images/half-highlight.jpg';
 import View from '../../UI/View/View';
+import MyButton from '../../UI/my-button/MyButton'
+import { useDispatch } from 'react-redux'
+import { setOpenPopup } from '../../../redux/slices/popup'
 
 const Highlights = () => {
+    const dispatch = useDispatch()
+
     return (
         <div className={classes.page}>
             <div className={classes.intro} style={{ backgroundImage: `url(${background})` }}>
@@ -36,6 +41,14 @@ const Highlights = () => {
                         <br />
                         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda nam, non, itaque sequi suscipit dolores quo, mollitia voluptatum atque laborum quidem fuga a? Blanditiis, consequuntur possimus delectus aut nobis consequatur.
                     </div>
+                    <MyButton
+                    onClick={() => dispatch(setOpenPopup(true))}
+                    style={{
+                        background: '#000',
+                        color: '#fff',
+                        marginTop: '30px'
+                    }}
+                    >Оставить заявку</MyButton>
                 </div>
 
                 <div className={classes.block}>
