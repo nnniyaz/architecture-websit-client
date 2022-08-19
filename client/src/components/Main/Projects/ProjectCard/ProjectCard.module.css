@@ -17,14 +17,17 @@
 .image {
     width: 100%;
     height: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
-.imageBlock>img {
+.imageBlock>.image {
     transition: transform .5s ease;
 }
 
-.imageBlock:hover>img {
-    transform: scale(1.5);
+.imageBlock:hover>.image {
+    transform: scale(1.3);
 }
 
 .link {
