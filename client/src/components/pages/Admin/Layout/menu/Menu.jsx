@@ -19,8 +19,8 @@ const navigation = [
         icon: <UsersIcon />
     },
     {
-        title: 'Документы',
-        path: 'docs',
+        title: 'Проекты',
+        path: '/projects',
         icon: <DocsIcon />
     },
     {

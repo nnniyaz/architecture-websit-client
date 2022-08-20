@@ -1,22 +1,5 @@
-.main {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: 'Inter', sans-serif;
-}
-
 .container {
     margin-top: 20px;
-    width: 70%;
-}
-
-.errmsg {
-    width: 100%;
-    height: 90vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .header {
@@ -25,21 +8,42 @@
 }
 
 .title {
-    font-size: 40px;
+    font-size: 30px;
+    font-family: 'Inter', sans-serif;
 }
 
 .users {
-    margin-top: 20px;
+    margin-top: 40px;
 }
 
 .row {
     display: flex;
     padding: 20px;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.1);
 }
 
 .cell {
-    justify-content: center;
+    justify-content: flex-start;
     align-self: center;
     display: flex;
-    width: 33%;
+    width: 20%;
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    opacity: 0.6;
+}
+
+.cellId {
+    width: 5%;
+}
+
+.maincell {
+    justify-content: flex-start;
+    align-self: center;
+    width: 50%;
+    margin-left: 20px;
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    opacity: 0.6;
 }

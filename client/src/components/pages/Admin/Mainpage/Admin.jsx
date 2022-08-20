@@ -5,44 +5,7 @@ import axios from '../../../../api/axios';
 
 
 const Admin = () => {
-    const [client, setClient] = useState([
-        {
-            id: 1,
-            name: "abc",
-            email: "abc@gmail.com",
-            message: "some message some message some message",
-        },
-        {
-            id: 2,
-            name: "abc",
-            email: "abc@gmail.com",
-            message: "some message some message some message",
-        },
-        {
-            id: 3,
-            name: "abc",
-            email: "abc@gmail.com",
-            message: "some message some message some message",
-        },
-        {
-            id: 1,
-            name: "abc",
-            email: "abc@gmail.com",
-            message: "some message some message some message",
-        },
-        {
-            id: 2,
-            name: "abc",
-            email: "abc@gmail.com",
-            message: "some message some message some message",
-        },
-        {
-            id: 3,
-            name: "abc",
-            email: "abc@gmail.com",
-            message: "some message some message some message",
-        },
-    ]);
+    const [client, setClient] = useState([]);
 
     useEffect(() => {
         fetchClients()
@@ -73,12 +36,7 @@ const Admin = () => {
                     ))}
                 </div>
             </div>
-            {client.map((number) => (
-              <Row data={number} key={number.id} />
-            ))}
-          </div>
         </div>
-      </div>
     );
 }
 

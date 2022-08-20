@@ -8,7 +8,7 @@ const Users = () => {
     const { auth } = useAuth();
     const [users, setUsers] = useState([]);
     const [isErr, setIsErr] = useState(true);
-    
+
     useEffect(() => {
         try {
             getUsers();
@@ -37,12 +37,9 @@ const Users = () => {
                     <div className={classes.errmsg}>У вас нету права доступа.</div>
                     :
                     <div className={classes.container}>
-                        <div className={classes.title}>All Users</div>
+                        <div className={classes.title}>Все Пользователи</div>
                         <div className={classes.users}>
-                            <div
-                                className={classes.row}
-                                style={{ borderBottom: '1px solid black' }}
-                            >
+                            <div className={classes.row}>
                                 <div className={classes.cell}>Full Name</div>
                                 <div className={classes.cell}>Email</div>
                                 <div className={classes.cell}>Role</div>

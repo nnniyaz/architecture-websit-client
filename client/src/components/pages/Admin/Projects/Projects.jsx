@@ -52,7 +52,7 @@ const Projects = () => {
     return (
         <div className={classes.main}>
             <div className={classes.container}>
-                <div className={classes.title}>All Users</div>
+                <div className={classes.title}>Projects</div>
                 <div className={classes.users}>
                     <div
                         className={classes.row}
@@ -66,10 +66,8 @@ const Projects = () => {
                         <div className={classes.maincell}>Description</div>
                     </div>
                     {
-                        ([...data].filter(project => {
-
-                        })).map(row =>
-                            <ProjectsRow data={row} />
+                        data.map(row =>
+                            <ProjectsRow data={row} key={row.id} />
                         )
                     }
                 </div>

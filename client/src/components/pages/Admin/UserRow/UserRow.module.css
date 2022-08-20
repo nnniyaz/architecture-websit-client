@@ -1,12 +1,28 @@
 .row {
     display: flex;
-    padding: 20px;
+    padding: 25px;
     font-family: 'Inter', sans-serif;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.1);
 }
 
 .cell {
-    justify-content: center;
+    justify-content: flex-start;
     align-self: center;
     display: flex;
-    width: 33%;
+    width: 20%;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.cellId {
+    width: 5%;
+}
+
+.maincell {
+    justify-content: flex-start;
+    align-self: center;
+    width: 50%;
+    margin-left: 20px;
+    font-size: 14px;
+    font-weight: 500;
 }

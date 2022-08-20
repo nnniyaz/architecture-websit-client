@@ -8,7 +8,7 @@ import check from "../../../assets/svgs/check.svg";
 import { useState } from "react";
 import axios from "../../../api/axios";
 
-const PopupForm = ({setSended}) => {
+const PopupForm = ({ setSended }) => {
   const [isChecked, setIsChecked] = useState(false);
 
   const {
@@ -31,6 +31,8 @@ const PopupForm = ({setSended}) => {
       })
       reset();
       setIsChecked(false);
+      setSended(true);
+      setTimeout(() => setSended(false), 3000);
     }
   };
 
