@@ -24,17 +24,13 @@ const PopupForm = ({setSended}) => {
 
   const onSubmit = async (data) => {
     if (isChecked) {
-      // await axios.post('/api/client/client', {
-      //   name: data.firstName,
-      //   email: data.email,
-      //   message: data.message
-      // })
-      setSended(true)
+      await axios.post('/api/client/client', {
+        name: data.firstName,
+        email: data.email,
+        message: data.message
+      })
       reset();
       setIsChecked(false);
-      setTimeout(() => {
-        setSended(false)
-      }, 3000)
     }
   };
 

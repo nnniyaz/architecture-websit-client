@@ -14,13 +14,13 @@ const Layout = () => {
     }
 
     return (
-      <div className={classes.main}>
-        <Menu />
+        <div className={classes.main}>
+            <Menu />
 
-        <div className={classes.content}>
-          <Outlet />
+            <div className={classes.content}>
+                <Outlet />
+            </div>
         </div>
-      </div>
     );
 }
 

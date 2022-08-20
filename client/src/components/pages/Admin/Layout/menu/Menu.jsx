@@ -32,32 +32,32 @@ const navigation = [
 
 const Menu = () => {
     return (
-      <div className={s.menu}>
-        <div>
-          <div style={{ marginLeft: "20px" }}>
-            <Logo />
-          </div>
-          <div className={s.list}>
-            {navigation.map((i) => (
-              <NavLink
-                key={i.title}
-                to={`/admin${i.path}`}
-                className={[s.item, ({isActive}) => isActive ? s.active : ''].join(' ')}
-              >
-                {i.icon}
-                <span>{i.title}</span>
-              </NavLink>
-            ))}
-          </div>
-        </div>
+        <div className={s.menu}>
+            <div>
+                <div style={{ marginLeft: "20px" }}>
+                    <Logo />
+                </div>
+                <div className={s.list}>
+                    {navigation.map((i) => (
+                        <NavLink
+                            key={i.title}
+                            to={`/admin${i.path}`}
+                            className={[s.item, ({ isActive }) => isActive ? s.active : ''].join(' ')}
+                        >
+                            {i.icon}
+                            <span>{i.title}</span>
+                        </NavLink>
+                    ))}
+                </div>
+            </div>
 
-        <div className={s.logout}>
-          <div>
-            <img src={logout} alt="logout" />
-            <span>Logout</span>
-          </div>
+            <div className={s.logout}>
+                <div>
+                    <img src={logout} alt="logout" />
+                    <span>Logout</span>
+                </div>
+            </div>
         </div>
-      </div>
     );
 }
 
