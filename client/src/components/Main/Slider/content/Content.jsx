@@ -1,9 +1,11 @@
 import s from './Content.module.scss'
-import { Link } from 'react-router-dom'
-import AppBtn from '../../../UI/app-btn/AppBtn'
 import MyButton from '../../../UI/my-button/MyButton'
+import { useDispatch } from 'react-redux'
+import { setOpenPopup } from '../../../../redux/slices/popup'
 
 const Content = () => {
+  const dispatch = useDispatch()
+
   return (
     <div className={s.content}>
       <div className={s.wrapper}>
@@ -13,11 +15,17 @@ const Content = () => {
         </div>
         <div className={s.btns}>
           <div className={s.projectBtn}>
-            <MyButton className={s.innerBtn} theme={'light'}>
-              <span>See Project {'->'}</span>
+            <MyButton className={s.innerBtn} theme={"light"}>
+              <span>See Project {"->"}</span>
             </MyButton>
           </div>
-          <MyButton style={{ backgroundColor: 'white', color: 'black' }} theme={'light'}>Оставить заявку</MyButton>
+          <MyButton
+          onClick={() => dispatch(setOpenPopup(true))}
+            style={{ backgroundColor: "white", color: "black" }}
+            theme={"light"}
+          >
+            Оставить заявку
+          </MyButton>
         </div>
 
         <svg

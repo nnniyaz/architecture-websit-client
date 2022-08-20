@@ -1,10 +1,6 @@
 import s from './Nav.module.scss'
 import { Link } from 'react-router-dom'
-import MyButton from '../../UI/my-button/MyButton'
 import { useDispatch } from 'react-redux'
-import { setOpenPopup } from '../../../redux/slices/popup'
-import View from '../../UI/View/View'
-import AppBtn from '../../UI/app-btn/AppBtn'
 
 const Nav = () => {
   const dispatch = useDispatch()
