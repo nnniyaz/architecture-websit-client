@@ -6,6 +6,7 @@ import MyButton from "../../UI/my-button/MyButton";
 import MyTextarea from "../../UI/my-textarea/MyTextarea";
 import check from "../../../assets/svgs/check.svg";
 import { useState } from "react";
+import axios from "../../../api/axios";
 
 const PopupForm = () => {
   const [isChecked, setIsChecked] = useState(false);
@@ -21,11 +22,18 @@ const PopupForm = () => {
 
   const { inputs } = useSelector((state) => state.popup);
 
-  const onSubmit = (data) => {
+  const onSubmit = async (data) => {
     if (isChecked) {
       console.log(data);
       reset();
       setIsChecked(false);
+      await axios.post('/api/client/client', {
+        name: data.firstName,
+        email: data.email,
+        message: data.message
+      })
+      reset()
+      setIsChecked(false)
     }
   };
 

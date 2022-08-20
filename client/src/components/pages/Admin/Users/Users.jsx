@@ -8,6 +8,7 @@ const Users = () => {
     const { auth } = useAuth();
     const [users, setUsers] = useState([]);
     const [isErr, setIsErr] = useState(true);
+    
     useEffect(() => {
         try {
             getUsers();
@@ -26,7 +27,6 @@ const Users = () => {
         const response = await axios.get('/api/user/users', config);
         setUsers(response.data);
         setIsErr(false);
-        console.log(users)
     }
 
     return (

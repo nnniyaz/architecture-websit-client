@@ -4,6 +4,7 @@ import MyButton from '../../UI/my-button/MyButton'
 import { useDispatch } from 'react-redux'
 import { setOpenPopup } from '../../../redux/slices/popup'
 import View from '../../UI/View/View'
+import AppBtn from '../../UI/app-btn/AppBtn'
 
 const Nav = () => {
   const dispatch = useDispatch()
@@ -19,7 +20,14 @@ const Nav = () => {
         <div className={s.right}>
           <Link to="/about">About</Link>
           <Link to="/contact">Contact</Link>
-          <View text='Оставить заявку' />
+          {/* <MyButton theme='light'>Оставить заявку</MyButton> */}
+          <span
+            style={{
+              marginLeft: "30px",
+            }}
+          >
+            <AppBtn text="Оставить заявку" />
+          </span>
         </div>
       </nav>
     );

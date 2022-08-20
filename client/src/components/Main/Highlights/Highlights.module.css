@@ -23,17 +23,17 @@
     margin: 0 150px;
     color: white;
     display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
+    flex-direction: column-reverse;
 }
 
 .title {
+    flex-grow: 0.5;
+    font-size: 25px;
     font-weight: 600;
     color: rgba(255, 255, 255, 0.9);
 }
 
 .topic {
-    margin-top: 250px;
     margin-bottom: -6px;
     font-size: 120px;
     font-family: 'Oswald', sans-serif;
@@ -82,4 +82,46 @@
 
 .image {
     width: 100%;
+}
+
+@media only screen and (max-width: 600px) {
+    .page {
+        margin: 0 -150px;
+    }
+
+    .intro {
+        margin: 0;
+        height: 50vh;
+        width: 100%;
+    }
+
+    .content {
+        margin: 0 20px;
+        width: 100%;
+    }
+
+    .title {
+        font-size: 18px;
+    }
+
+    .topic {
+        font-size: 50px;
+    }
+
+    .article {
+        flex-direction: column;
+    }
+
+    .block {
+        width: 100%;
+        padding: 0 20px;
+    }
+
+    .articleTitle {
+        font-size: 40px;
+    }
+
+    .articleText {
+        font-size: 20px;
+    }
 }

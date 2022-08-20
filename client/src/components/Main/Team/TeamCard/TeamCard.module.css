@@ -32,3 +32,15 @@
 .nickname {
     margin-right: 30px;
 }
+
+@media only screen and (max-width: 600px) {
+    .card {
+        width: 100%;
+    }
+
+    .fullname,
+    .position,
+    .contacts {
+        margin-left: 20px;
+    }
+}
