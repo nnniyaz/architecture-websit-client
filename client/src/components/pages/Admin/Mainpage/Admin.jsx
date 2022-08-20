@@ -27,6 +27,7 @@ const Admin = () => {
                         className={classes.row}
                         style={{ borderBottom: '1px solid black' }}
                     >
+                        <div className={classes.smallcell}>ID</div>
                         <div className={classes.cell}>Name</div>
                         <div className={classes.cell}>Email</div>
                         <div className={classes.maincell}>Message</div>

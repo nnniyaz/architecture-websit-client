@@ -1,0 +1,34 @@
+.row {
+    all: unset;
+    display: flex;
+    padding: 20px;
+    transition: .1s linear;
+    cursor: pointer;
+}
+
+.row:hover {
+    background-color: black;
+    color: white;
+}
+
+.smallcell {
+    display: flex;
+    justify-content: flex-start;
+    align-self: center;
+    width: calc(15%/2);
+}
+
+.cell {
+    display: flex;
+    justify-content: flex-start;
+    align-self: center;
+    width: 15%;
+    padding: 0 15px;
+}
+
+.maincell {
+    display: flex;
+    justify-content: flex-start;
+    align-self: center;
+    width: 40%;
+}

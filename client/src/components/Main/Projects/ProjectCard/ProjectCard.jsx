@@ -19,7 +19,15 @@ const ProjectCard = ({ data }) => {
             </div>
 
             <div className={classes.info}>
-                <div className={classes.index}>{data.index}</div>
+                <div className={classes.index}>
+                    {
+                        data.id <= 9
+                            ?
+                            '0' + data.id
+                            :
+                            data.id
+                    }
+                </div>
                 <div className={classes.details}>
                     <div className={classes.projectName}>{data.name}</div>
                     <div className={classes.description}>

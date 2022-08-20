@@ -24,16 +24,13 @@ const PopupForm = () => {
 
   const onSubmit = async (data) => {
     if (isChecked) {
-      console.log(data);
-      reset();
-      setIsChecked(false);
       await axios.post('/api/client/client', {
         name: data.firstName,
         email: data.email,
         message: data.message
       })
-      reset()
-      setIsChecked(false)
+      reset();
+      setIsChecked(false);
     }
   };
 

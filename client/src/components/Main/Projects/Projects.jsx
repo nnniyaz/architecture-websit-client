@@ -6,36 +6,36 @@ import View from '../../UI/View/View';
 const Projects = () => {
     const [data, setData] = useState([
         {
-            index: '01',
+            id: 1,
             name: 'Canggu White House',
-            description: 'Our intent is to be unclassifiable in a cluttered agency landscape.',
             year: 2022,
             location: 'Bali',
-            type: 'Residential'
+            type: 'Residential',
+            description: 'Our intent is to be unclassifiable in a cluttered agency landscape.'
         },
         {
-            index: '02',
+            id: 2,
             name: 'Canggu White House',
-            description: 'Our intent is to be unclassifiable in a cluttered agency landscape.',
             year: 2022,
             location: 'Bali',
-            type: 'Residential'
+            type: 'Residential',
+            description: 'Our intent is to be unclassifiable in a cluttered agency landscape.'
         },
         {
-            index: '03',
+            id: 3,
             name: 'Canggu White House',
-            description: 'Our intent is to be unclassifiable in a cluttered agency landscape.',
             year: 2022,
             location: 'Bali',
-            type: 'Residential'
+            type: 'Residential',
+            description: 'Our intent is to be unclassifiable in a cluttered agency landscape.'
         },
         {
-            index: '04',
+            id: 4,
             name: 'Canggu White House',
-            description: 'Our intent is to be unclassifiable in a cluttered agency landscape.',
             year: 2022,
             location: 'Bali',
-            type: 'Residential'
+            type: 'Residential',
+            description: 'Our intent is to be unclassifiable in a cluttered agency landscape.'
         },
     ]);
 
@@ -50,7 +50,7 @@ const Projects = () => {
                 <div className={classes.row}>
                     {
                         data.map(card =>
-                            <ProjectCard key={card.index} data={card} />
+                            <ProjectCard key={card.id} data={card} />
                         )
                     }
                 </div>

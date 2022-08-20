@@ -11,6 +11,12 @@
     width: 20%;
 }
 
+.smallcell {
+    justify-content: flex-start;
+    align-self: center;
+    width: 10%;
+}
+
 .maincell {
     justify-content: flex-start;
     align-self: center;

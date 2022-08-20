@@ -16,6 +16,8 @@ import RequireAuth from './components/RequireAuth';
 import { AuthProvider } from './context/auth-provider';
 import { Provider } from 'react-redux';
 import store from './redux/store'
+import Projects from './components/pages/Admin/Projects/Projects';
+import ProjectPage from './components/pages/Admin/ProjectPage/ProjectPage';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -36,7 +38,8 @@ root.render(
               <Route element={<Layout />}>
                 <Route path='/admin/main' element={<Admin />} />
                 <Route path='/admin/users' element={<Users />} />
-                <Route path='/admin/projects' element={<Users />} />
+                <Route path='/admin/projects' element={<Projects />} />
+                <Route path='/admin/projects/:id' element={<ProjectPage />} />
               </Route>
             </Route>
           </Route>
