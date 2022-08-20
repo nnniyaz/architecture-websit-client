@@ -2,10 +2,13 @@
     width: 100%;
     min-height: 100vh;
     font-family: 'Inter', sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
 }
 
 .sidebar {
-    width: 170px;
+    width: 10%;
     height: 100vh;
     position: fixed;
     background-color: rgb(194, 194, 194);

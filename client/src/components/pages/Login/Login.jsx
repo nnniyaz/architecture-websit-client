@@ -17,7 +17,7 @@ const Login = () => {
     const navigate = useNavigate();
     const location = useLocation();
     const axiosPrivate = useAxiosPrivate();
-    const from = location.state?.from?.pathname || "/admin";
+    const from = location.state?.from?.pathname || "/admin/main";
 
     const [isShown, setIsShown] = useState(false);
 

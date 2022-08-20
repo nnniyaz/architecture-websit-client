@@ -2,7 +2,6 @@ import { NavLink, Outlet } from 'react-router-dom';
 import classes from './Layout.module.css';
 import { useState } from 'react';
 import useLogout from '../../../../hooks/useLogout';
-import check from '../../../../assets/svgs/check.svg';
 
 const Layout = () => {
     const setActive = ({ isActive }) => isActive ? 'activeLink' : '';
@@ -13,8 +12,6 @@ const Layout = () => {
     const signout = async () => {
         await logout();
     }
-
-    const [isChecked, setIsChecked] = useState(false)
 
     return (
         <div className={classes.main}>
@@ -30,7 +27,7 @@ const Layout = () => {
                 <div className={classes.sidenavbar}>
                     <NavLink
                         className={classes.link}
-                        to='admin'
+                        to='admin/main'
                         style={({ isActive }) => ({
                             color: isActive ? 'rgb(0, 6, 184)' : '',
                             backgroundColor: isActive ? 'rgba(241, 241, 241, 0.8)' : ''
