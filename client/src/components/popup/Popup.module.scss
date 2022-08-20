@@ -12,50 +12,64 @@
 
     .wrapper {
         width: 32%;
+        min-height: 90vh;
         padding: 50px;
         background: #fff;
         position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
 
-        .close {
-            position: absolute;
-            top: 0;
-            right: -60px;
-            background: rgba(255, 255, 255, 0.7);
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            transition: all .2s;
-            padding: 10px;
-            cursor: pointer;
-
-            * {
-                cursor: pointer;
+        .success {
+            
+            img {
+                width: 100px;
             }
+        }
 
-            &:hover {
+        .inner {
+            .close {
+                position: absolute;
+                top: 0;
+                right: -60px;
+                background: rgba(255, 255, 255, 0.7);
+                display: flex;
+                justify-content: center;
+                align-items: center;
                 transition: all .2s;
-                background: rgba(255, 255, 255, 1);
-            } 
+                padding: 10px;
+                cursor: pointer;
 
-            svg {
-                transform: scale();
+                * {
+                    cursor: pointer;
+                }
+
+                &:hover {
+                    transition: all .2s;
+                    background: rgba(255, 255, 255, 1);
+                }
+
+                svg {
+                    transform: scale();
+                }
             }
-        }
 
-        h2 {
-            font-family: "Inter", sans-serif;
-            font-size: 30px;
-            font-weight: 600;
-        }
+            h2 {
+                font-family: "Inter", sans-serif;
+                font-size: 30px;
+                font-weight: 600;
+            }
 
-        > p {
-            font-family: "Inter", sans-serif;
-            opacity: 0.5;
-            margin: 20px 0 40px;
-        }
+            >p {
+                font-family: "Inter", sans-serif;
+                opacity: 0.5;
+                margin: 20px 0 40px;
+            }
 
-        label {
-            margin-bottom: 10px;
+            label {
+                margin-bottom: 10px;
+
+            }
         }
     }
 }

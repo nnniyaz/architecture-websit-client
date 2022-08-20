@@ -11,6 +11,7 @@ const Row = ({ data, process, remove }) => {
 
     return (
         <div className={classes.row}>
+            <div className={[classes.cell, classes.cellId].join(' ')}>{data.id}</div>
             <div className={classes.cell}>{data.name}</div>
             <div className={classes.cell}>{data.email}</div>
             <div className={classes.maincell}>{data.message}</div>

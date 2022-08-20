@@ -1,13 +1,5 @@
-.main {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 .container {
     margin-top: 20px;
-    width: 70%;
 }
 
 .header {
@@ -16,50 +8,18 @@
 }
 
 .title {
-    font-size: 40px;
-}
-
-.sortbar {
-    height: 80%;
-    display: flex;
-    align-items: center;
-    border: 1px solid rgb(194, 194, 194);
-    border-radius: 10px;
-}
-
-.sortbtn {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 10px;
-    border-right: 1px solid rgb(194, 194, 194);
-    cursor: pointer;
-    transition: 0.2s linear;
-}
-
-.sortbtn:first-child {
-    border-bottom-left-radius: 8px;
-    border-top-left-radius: 8px;
-}
-
-.sortbtn:last-child {
-    border-right: none;
-    border-bottom-right-radius: 8px;
-    border-top-right-radius: 8px;
-}
-
-.sortbtn:hover {
-    background-color: rgb(194, 194, 194);
-    transition: 0.2s linear;
+    font-size: 30px;
+    font-family: 'Inter', sans-serif;
 }
 
 .numbers {
-    margin-top: 20px;
+    margin-top: 40px;
 }
 
 .row {
     display: flex;
     padding: 20px;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.1);
 }
 
 .cell {
@@ -67,6 +27,14 @@
     align-self: center;
     display: flex;
     width: 20%;
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    opacity: 0.6;
+}
+
+.cellId {
+    width: 5%;
 }
 
 .maincell {
@@ -74,4 +42,8 @@
     align-self: center;
     width: 50%;
     margin-left: 20px;
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    opacity: 0.6;
 }
