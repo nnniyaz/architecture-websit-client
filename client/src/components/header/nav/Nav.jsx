@@ -20,14 +20,6 @@ const Nav = () => {
       <div className={s.right}>
         <Link to="/about">About</Link>
         <Link to="/contact">Contact</Link>
-        {/* <MyButton theme='light'>Оставить заявку</MyButton> */}
-        <span
-          style={{
-            marginLeft: "30px",
-          }}
-        >
-          <AppBtn text="Оставить заявку" />
-        </span>
       </div>
     </nav>
   );

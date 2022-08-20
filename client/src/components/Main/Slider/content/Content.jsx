@@ -7,17 +7,18 @@ const Content = () => {
   return (
     <div className={s.content}>
       <div className={s.wrapper}>
-        <h1>House rectangle</h1>
-        <h1>in Aguora</h1>
-          <Link to="/projects">
-            See Project
-            <svg xmlns="http://www.w3.org/2000/svg" height="40" width="40">
-              <path
-                d="m15.667 28.833-1-1L22.5 20l-7.833-7.875 1-1L24.5 20Z"
-                fill="#fff"
-              />
-            </svg>
-          </Link>
+        <div className={s.title}>
+          <h1>House rectangle</h1>
+          <h1>in Aguora</h1>
+        </div>
+        <div className={s.btns}>
+          <div className={s.projectBtn}>
+            <MyButton className={s.innerBtn} theme={'light'}>
+              <span>See Project {'->'}</span>
+            </MyButton>
+          </div>
+          <MyButton style={{ backgroundColor: 'white', color: 'black' }} theme={'light'}>Оставить заявку</MyButton>
+        </div>
 
         <svg
           xmlns="http://www.w3.org/2000/svg"
