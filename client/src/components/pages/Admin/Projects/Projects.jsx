@@ -2,10 +2,11 @@ import { useEffect } from 'react';
 import { useState } from 'react';
 import axios from '../../../../api/axios';
 import ProjectsRow from '../ProjectsRow/ProjectsRow';
-import classes from './Projects.module.css'
+import s from './Projects.module.scss'
+import Card from './card/Card'
 
 const Projects = () => {
-    const [data, setData] = useState([
+    const [projects, setProjects] = useState([
         {
             id: 1,
             name: 'Canggu White House',
@@ -40,36 +41,24 @@ const Projects = () => {
         },
     ]);
 
-    useEffect(() => {
-        getProjects()
-    }, []);
+    // useEffect(() => {
+    //     getProjects()
+    // }, []);
 
-    const getProjects = async () => {
-        const response = await axios.get('/api/project/projects');
-        setData(response.data);
-    }
+    // const getProjects = async () => {
+    //     const response = await axios.get('/api/project/projects');
+    //     setProjects(response.data);
+    // }
 
     return (
-        <div className={classes.main}>
-            <div className={classes.container}>
-                <div className={classes.title}>Projects</div>
-                <div className={classes.users}>
-                    <div
-                        className={classes.row}
-                        style={{ borderBottom: '1px solid black' }}
-                    >
-                        <div className={classes.smallcell}>ID</div>
-                        <div className={classes.cell}>Project Name</div>
-                        <div className={classes.smallcell}>Year</div>
-                        <div className={classes.cell}>Location</div>
-                        <div className={classes.cell}>Type</div>
-                        <div className={classes.maincell}>Description</div>
-                    </div>
-                    {
-                        data.map(row =>
-                            <ProjectsRow data={row} key={row.id} />
-                        )
-                    }
+        <div className={s.main}>
+            <div className={s.container}>
+                <h2>Проекты</h2>
+
+                <div className={s.projects}>
+                    {projects.map(i => (
+                        <Card key={i.id} data={i} />
+                    ))}
                 </div>
             </div>
         </div>

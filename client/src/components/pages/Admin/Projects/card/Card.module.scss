@@ -1,0 +1,66 @@
+.card {
+    margin: 20px 0;
+
+    .wrapper {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+
+        * {
+            font-family: 'Inter', sans-serif;
+        }
+
+        > img {
+            width: 120px;
+            border-radius: 5px;
+            margin-right: 20px;
+        }
+
+        .info {
+            display: flex;flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+
+            h4 {
+                font-weight: 600;
+            }
+
+            p {
+                font-weight: 500;
+                font-size: 14px;
+                opacity: 0.6;
+                margin: 8px 0 10px;
+            }
+
+            > div {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                width: 100%;
+
+                > span {
+                    font-size: 14px;
+                    font-weight: 500;
+                    opacity: 0.7;
+                }
+            }
+
+            .location {
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+
+                img {
+                    width: 20px;
+                    opacity: 0.7;
+                    margin-right: 5px;
+                }
+
+                span {
+                    font-weight: 500;
+                    opacity: 0.7;
+                }
+            }
+        }
+    }
+}

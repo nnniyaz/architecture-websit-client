@@ -34,7 +34,7 @@ root.render(
           <Route path='admin/restore' element={<Restore />} />
           <Route path='admin/reset/:email/:id/:link' element={<Reset />} />
           <Route element={<PersistLogin />}>
-            <Route element={<RequireAuth />}>
+            {/* <Route element={<RequireAuth />}> */}
               <Route element={<Layout />}>
                 <Route path='/admin/main' element={<Admin />} />
                 <Route path='/admin/users' element={<Users />} />
@@ -42,7 +42,7 @@ root.render(
                 <Route path='/admin/projects/:id' element={<ProjectPage />} />
               </Route>
             </Route>
-          </Route>
+          {/* </Route> */}
         </Routes>
       </AuthProvider>
     </BrowserRouter>

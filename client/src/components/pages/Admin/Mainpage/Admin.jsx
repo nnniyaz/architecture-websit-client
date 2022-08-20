@@ -27,9 +27,9 @@ const Admin = () => {
                         className={classes.row}
                     >
                         <div className={[classes.cell, classes.cellId].join(' ')}>ID</div>
-                        <div className={classes.cell}>Name</div>
+                        <div className={classes.cell}>Имя</div>
                         <div className={classes.cell}>Email</div>
-                        <div className={classes.maincell}>Message</div>
+                        <div className={classes.maincell}>Сообщение</div>
                     </div>
                     {client.map((number) => (
                         <Row data={number} key={number.id} />
