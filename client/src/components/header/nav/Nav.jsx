@@ -1,13 +1,10 @@
 import s from './Nav.module.scss'
 import { Link } from 'react-router-dom'
-import { useDispatch } from 'react-redux'
 import login from '../../../assets/svgs/login.svg'
 import loginBlack from '../../../assets/svgs/login-black.svg'
 import { useState } from 'react'
 
 const Nav = () => {
-  const dispatch = useDispatch()
-
   const [entered, setEntered] = useState(false);
 
   return (

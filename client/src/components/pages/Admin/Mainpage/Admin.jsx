@@ -73,7 +73,12 @@ const Admin = () => {
                     ))}
                 </div>
             </div>
+            {client.map((number) => (
+              <Row data={number} key={number.id} />
+            ))}
+          </div>
         </div>
+      </div>
     );
 }
 
