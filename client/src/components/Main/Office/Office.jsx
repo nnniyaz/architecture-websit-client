@@ -32,10 +32,7 @@ const Office = () => {
             </div>
             <MyButton
               onClick={() => dispatch(setOpenPopup(true))}
-              style={{
-                background: "#000",
-                color: "#fff",
-              }}
+              theme={'dark'}
             >
               Оставить заявку
             </MyButton>

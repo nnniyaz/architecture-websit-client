@@ -13,8 +13,24 @@
             align-items: center;
             margin-top: 30px;
 
+            .checked {
+                width: 25px;
+                height: 25px;
+                background: #343a40;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .noChecked {
+                width: 25px;
+                height: 25px;
+                border: 2px solid #343a40;
+            }
+
             span {
                 margin-left: 20px;
+                font-size: 14px;
 
                 a {
                     text-decoration: none;

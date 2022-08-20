@@ -56,7 +56,7 @@ const Projects = () => {
                 </div>
             </div>
 
-            <View text='VIEW MORE' />
+            <View text='VIEW MORE' hasImg />
         </div>
     );
 }

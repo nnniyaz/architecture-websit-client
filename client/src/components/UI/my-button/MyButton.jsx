@@ -1,9 +1,14 @@
 import s from './MyButton.module.scss'
 
-const MyButton = ({children, ...props},) => {
+const MyButton = ({theme, children, ...props},) => {
     return (
-        <button {...props} className={s.button}>{children}</button>
-    )
+      <button
+        {...props}
+        className={[s.button, theme === "dark" ? s.dark : s.light].join(" ")}
+      >
+        {children}
+      </button>
+    );
 }
 
 export default MyButton

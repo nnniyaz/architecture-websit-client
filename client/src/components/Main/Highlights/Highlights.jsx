@@ -43,11 +43,8 @@ const Highlights = () => {
                     </div>
                     <MyButton
                     onClick={() => dispatch(setOpenPopup(true))}
-                    style={{
-                        background: '#000',
-                        color: '#fff',
-                        marginTop: '30px'
-                    }}
+                    theme='dark'
+                    style={{marginTop: '40px'}}
                     >Оставить заявку</MyButton>
                 </div>
 
@@ -83,7 +80,7 @@ const Highlights = () => {
                 </div>
             </div>
 
-            <View text='VIEW PROJECT' />
+            <View text='VIEW PROJECT' hasImg />
         </div>
     );
 }

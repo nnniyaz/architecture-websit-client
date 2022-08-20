@@ -45,7 +45,7 @@ const Team = () => {
                 }
             </div>
 
-            <View text='VIEW ALL MEMBERS' />
+            <View text='VIEW ALL MEMBERS' hasImg />
         </div>
     );
 }

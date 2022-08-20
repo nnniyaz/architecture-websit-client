@@ -3,6 +3,7 @@ import {Link} from 'react-router-dom'
 import MyButton from '../../UI/my-button/MyButton'
 import { useDispatch } from 'react-redux'
 import { setOpenPopup } from '../../../redux/slices/popup'
+import View from '../../UI/View/View'
 
 const Nav = () => {
   const dispatch = useDispatch()
@@ -18,7 +19,7 @@ const Nav = () => {
         <div className={s.right}>
           <Link to="/about">About</Link>
           <Link to="/contact">Contact</Link>
-          <MyButton className={s.btn} onClick={() => dispatch(setOpenPopup(true))}>Оставить заявку</MyButton>
+          <View text='Оставить заявку' />
         </div>
       </nav>
     );
