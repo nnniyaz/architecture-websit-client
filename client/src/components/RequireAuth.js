@@ -8,7 +8,7 @@ const RequireAuth = () => {
     return (
         auth?.accessToken
             ? <Outlet />
-            : <Navigate to='admin/login' state={{ from: location }} replace />
+            : <Navigate to='admin' state={{ from: location }} replace />
     );
 }
 

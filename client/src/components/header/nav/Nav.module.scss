@@ -20,6 +20,10 @@
             transition: all .2s;
             color: #ff6f61;
         }
+
+        >div {
+            display: flex;
+        }
     }
 
     .left {
@@ -30,6 +34,8 @@
     }
 
     .right {
+        display: flex;
+        align-items: center;
 
         a {
             margin-left: 30px;
@@ -37,6 +43,25 @@
 
         button {
             margin-left: 30px;
+        }
+
+        .link {
+            display: flex;
+            align-items: center;
+            border: 1px solid rgba(255, 255, 255, 0.5);
+            padding: 10px 15px;
+            transition: .1s linear;
+            font-size: 12px;
+
+            .icon {
+                margin-right: 10px;
+            }
+
+            &:hover {
+                background-color: #fff;
+                color: black;
+                transition: .1s linear;
+            }
         }
     }
 }

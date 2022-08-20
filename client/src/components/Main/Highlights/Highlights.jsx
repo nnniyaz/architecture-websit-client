@@ -18,7 +18,10 @@ const Highlights = () => {
       >
         <div className={classes.grandient}>
           <div className={classes.content}>
-            <div className={classes.topic}>HEYDAR ALIYEV CULTURAL CENTER</div>
+            <div className={classes.topic}>
+              <div>HEYDAR ALIYEV</div>
+              <div>CULTURAL CENTER</div>
+            </div>
             <div className={classes.title}>PROJECT HIGLIGHT</div>
           </div>
         </div>
