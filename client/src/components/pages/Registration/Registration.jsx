@@ -34,7 +34,8 @@ const Registration = () => {
                 {
                     headers: { 'Content-Type': 'application/json' },
                     withCredentials: true
-                });
+                }
+            );
             const accessToken = response?.data?.accessToken;
             setIsLoading(false);
             setIsShown(true);
@@ -98,7 +99,7 @@ const Registration = () => {
                     </button>
                 </form>
                 <div>
-                    Or you can <Link to='/admin/login'>sign in</Link>
+                    Or you can <Link to='/admin'>sign in</Link>
                 </div>
                 {
                     isLoading && (
