@@ -5,7 +5,44 @@ import axios from '../../../../api/axios';
 
 
 const Admin = () => {
-    const [client, setClient] = useState([]);
+    const [client, setClient] = useState([
+        {
+            id: 1,
+            name: "abc",
+            email: "abc@gmail.com",
+            message: "some message some message some message",
+        },
+        {
+            id: 2,
+            name: "abc",
+            email: "abc@gmail.com",
+            message: "some message some message some message",
+        },
+        {
+            id: 3,
+            name: "abc",
+            email: "abc@gmail.com",
+            message: "some message some message some message",
+        },
+        {
+            id: 1,
+            name: "abc",
+            email: "abc@gmail.com",
+            message: "some message some message some message",
+        },
+        {
+            id: 2,
+            name: "abc",
+            email: "abc@gmail.com",
+            message: "some message some message some message",
+        },
+        {
+            id: 3,
+            name: "abc",
+            email: "abc@gmail.com",
+            message: "some message some message some message",
+        },
+    ]);
 
     useEffect(() => {
         fetchClients()
@@ -20,23 +57,20 @@ const Admin = () => {
         <div className={classes.main}>
             <div className={classes.container}>
                 <div className={classes.header}>
-                    <div className={classes.title}>Dashboard</div>
+                    <div className={classes.title}>Почта</div>
                 </div>
                 <div className={classes.numbers}>
                     <div
                         className={classes.row}
-                        style={{ borderBottom: '1px solid black' }}
                     >
-                        <div className={classes.smallcell}>ID</div>
+                        <div className={[classes.cell, classes.cellId].join(' ')}>ID</div>
                         <div className={classes.cell}>Name</div>
                         <div className={classes.cell}>Email</div>
                         <div className={classes.maincell}>Message</div>
                     </div>
-                    {
-                        client.map(number =>
-                            <Row data={number} key={number.id} />
-                        )
-                    }
+                    {client.map((number) => (
+                        <Row data={number} key={number.id} />
+                    ))}
                 </div>
             </div>
         </div>
