@@ -5,4 +5,57 @@
         font-weight: 400;
         font-family: 'Inter', sans-serif;
     }
+
+    .filter {
+        margin-top: 40px;
+        margin-bottom: 5px;
+        border-radius: 10px 10px 0 0;
+        margin-bottom: 20px;
+
+        span {
+            font-family: 'Inter', sans-serif;
+            font-size: 16px;
+            font-weight: 600;
+            opacity: 0.7;
+            cursor: pointer;
+            transition: all .2s;
+            margin-right: 30px;
+            padding: 2px;
+
+            &:hover {
+                transition: all .2s;
+                opacity: 1;
+                color: rgb(87, 87, 255);
+            }
+        }
+    }
+
+    .wrapper {
+        margin-top: 30px;
+
+        .titles {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+
+            span {
+                font-family: 'Inter', sans-serif;
+                font-weight: 500;
+                font-size: 14px;
+                opacity: 0.5;
+            }
+
+            .name {
+                width: 45%;
+            }
+
+            .type {
+                width: 20%;
+            }
+
+            .actions {
+                width: 20%;
+            }
+        }
+    }
 }

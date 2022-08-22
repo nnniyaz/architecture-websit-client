@@ -51,17 +51,30 @@ const Projects = () => {
     // }
 
     return (
-        <div className={s.main}>
-            <div className={s.container}>
-                <h2>Проекты</h2>
+      <div className={s.main}>
+        <div className={s.container}>
+          <h2>Проекты</h2>
 
-                <div className={s.projects}>
-                    {projects.map(i => (
-                        <Card key={i.id} data={i} />
-                    ))}
-                </div>
+          <div className={s.filter}>
+            <span>Последнии</span>
+            <span>Старые</span>
+          </div>
+
+          <div className={s.wrapper}>
+            <div className={s.titles}>
+                <span className={s.name}>Название проекта</span>
+                <span className={s.type}>Тип</span>
+                <span className={s.actions}>Действия</span>
             </div>
+
+            <div className={s.projects}>
+              {projects.map((i) => (
+                <Card key={i.id} data={i} />
+              ))}
+            </div>
+          </div>
         </div>
+      </div>
     );
 }
 

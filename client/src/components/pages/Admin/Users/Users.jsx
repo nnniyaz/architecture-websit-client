@@ -37,7 +37,7 @@ const Users = () => {
                     <div className={classes.errmsg}>У вас нету права доступа.</div>
                     :
                     <div className={classes.container}>
-                        <div className={classes.title}>Все Пользователи</div>
+                        <div className={classes.title}>Пользователи</div>
                         <div className={classes.users}>
                             <div className={classes.row}>
                                 <div className={[classes.cell, classes.cellId].join(' ')}>ID</div>
