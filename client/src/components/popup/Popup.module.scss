@@ -12,13 +12,18 @@
 
     .wrapper {
         width: 50%;
-        height: 100vh;
-        padding: 20px;
+        height: 85vh;
+        padding: 10px 20px;
         background: #fff;
         position: relative;
         display: flex;
         justify-content: center;
         align-items: center;
+
+        @media screen and (max-width: 900px) {
+            width: 80%;
+            height: 85vh;
+        }
 
         .success {
 
@@ -32,15 +37,18 @@
 
             .close {
                 position: absolute;
-                top: 0;
-                right: -60px;
-                background: rgba(255, 255, 255, 0.7);
+                top: 3px;
+                right: 5px;
                 display: flex;
                 justify-content: center;
                 align-items: center;
                 transition: all .2s;
                 padding: 10px;
                 cursor: pointer;
+
+                @media screen and (max-width: 900px) {
+                    top: 1px;
+                }
 
                 * {
                     cursor: pointer;
@@ -61,17 +69,24 @@
                 font-size: 30px;
                 font-weight: 600;
                 margin: 0;
+
+                @media screen and (max-width: 900px) {
+                    font-size: 25px;
+                }
             }
 
             >p {
                 font-family: "Inter", sans-serif;
                 opacity: 0.5;
                 margin-top: 10px;
+
+                @media screen and (max-width: 900px) {
+                    font-size: 14px;
+                }
             }
 
             label {
                 margin-bottom: 10px;
-
             }
         }
     }

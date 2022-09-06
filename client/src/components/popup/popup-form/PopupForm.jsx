@@ -24,11 +24,15 @@ const PopupForm = ({ setSended }) => {
 
   const onSubmit = async (data) => {
     if (isChecked) {
-      await axios.post('/api/client/client', {
-        name: data.firstName,
-        email: data.email,
-        message: data.message
-      })
+      try {
+        await axios.post('/api/client/client', {
+          name: data.firstName,
+          email: data.email,
+          message: data.message
+        })
+      } catch (error) {
+        console.log(error)
+      }
       reset();
       setIsChecked(false);
       setSended(true);
@@ -54,7 +58,7 @@ const PopupForm = ({ setSended }) => {
         <label className={s.checkbox} onClick={() => setIsChecked(!isChecked)}>
           {isChecked ? (
             <div className={s.checked}>
-              <img src={check} alt="" />
+              <img src={check} alt="check" />
             </div>
           ) : (
             <div className={s.noChecked}></div>
@@ -69,7 +73,7 @@ const PopupForm = ({ setSended }) => {
         theme={"dark"}
         style={{
           width: "100%",
-          padding: "20px 0",
+          padding: "10px 0",
           fontSize: "14px",
         }}
       >
