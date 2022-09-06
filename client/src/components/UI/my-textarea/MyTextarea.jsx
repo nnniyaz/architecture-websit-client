@@ -1,9 +1,9 @@
 import { useState } from 'react';
 import s from './MyTextarea.module.scss'
 
-const MyTextarea = ({data, register, errors}) => {
+const MyTextarea = ({ data, register, errors }) => {
   const [isFocused, setFocused] = useState(false)
-    
+
   let getOptions = (options) => {
     let resOpt = {};
     for (let key in options) {
@@ -34,6 +34,10 @@ const MyTextarea = ({data, register, errors}) => {
         <textarea
           onFocus={() => setFocused(true)}
           className={isFocused ? s.focused : ''}
+          style={{
+            borderColor: isFocused ? 'black' : '',
+            borderColor: getError(data.name, errors) ? 'red' : ''
+          }}
           type={data.type}
           {...register(data.name, getOptions(data.options))}
         ></textarea>

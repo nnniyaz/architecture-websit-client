@@ -60,7 +60,7 @@ const PopupForm = ({ setSended }) => {
             <div className={s.noChecked}></div>
           )}
           <span>
-            Я согласен с условиями <a href="/conditionData">обработки данных</a>{" "}
+            Я согласен с условиями <a href="#">обработки данных</a>.
           </span>
         </label>
       </div>

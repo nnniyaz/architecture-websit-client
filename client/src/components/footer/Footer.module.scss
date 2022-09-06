@@ -9,4 +9,15 @@
         justify-content: flex-start;
         align-items: flex-start;
     }
+
+    @media screen and (max-width: 900px) {
+        padding: 0 20px 50px 20px;
+        flex-direction: column;
+
+        .details {
+            margin-top: 20px;
+            width: 100%;
+            flex-direction: column;
+        }
+    }
 }

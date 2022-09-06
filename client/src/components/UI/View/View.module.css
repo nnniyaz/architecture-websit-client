@@ -45,3 +45,9 @@
     transform: scaleX(1);
     transform-origin: bottom left;
 }
+
+@media screen and (max-width: 900px) {
+    .view {
+        margin-right: 20px;
+    }
+}

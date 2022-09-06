@@ -58,7 +58,6 @@
             display: flex;
             justify-content: flex-start;
             align-items: center;
-            // margin-top: 100px;
             transition: all .2s;
             opacity: 0.7;
             padding: 0 10px;
@@ -77,12 +76,44 @@
             cursor: pointer;
             position: absolute;
             left: 150px;
-            bottom: 50px;
+            bottom: 65px;
             z-index: 15;
 
             &:hover {
                 transition: all .2s;
                 opacity: 1;
+            }
+        }
+    }
+
+    @media screen and (max-width: 900px) {
+        padding: 0;
+        padding: 0 20px;
+
+        .wrapper {
+            .title {
+                h1 {
+                    font-size: 40px;
+                }
+            }
+
+            .btns {
+                width: 60%;
+                flex-direction: column-reverse;
+
+                .projectBtn {
+                    margin-top: 20px;
+                    width: 100%;
+                    justify-content: flex-start;
+
+                    .innerBtn {
+                        width: 100%;
+                    }
+                }
+            }
+
+            .arrowBottom {
+                left: 20px;
             }
         }
     }

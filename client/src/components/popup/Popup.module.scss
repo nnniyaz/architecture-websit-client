@@ -11,9 +11,9 @@
     align-items: center;
 
     .wrapper {
-        width: 32%;
-        min-height: 90vh;
-        padding: 50px;
+        width: 50%;
+        height: 100vh;
+        padding: 20px;
         background: #fff;
         position: relative;
         display: flex;
@@ -21,13 +21,15 @@
         align-items: center;
 
         .success {
-            
+
             img {
                 width: 100px;
             }
         }
 
         .inner {
+            height: 100%;
+
             .close {
                 position: absolute;
                 top: 0;
@@ -58,12 +60,13 @@
                 font-family: "Inter", sans-serif;
                 font-size: 30px;
                 font-weight: 600;
+                margin: 0;
             }
 
             >p {
                 font-family: "Inter", sans-serif;
                 opacity: 0.5;
-                margin: 20px 0 40px;
+                margin-top: 10px;
             }
 
             label {

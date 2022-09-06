@@ -20,9 +20,10 @@ const Content = () => {
             </MyButton>
           </div>
           <MyButton
-          onClick={() => dispatch(setOpenPopup(true))}
+            onClick={() => dispatch(setOpenPopup(true))}
             style={{ backgroundColor: "white", color: "black" }}
             theme={"light"}
+            className={s.applyBtn}
           >
             Оставить заявку
           </MyButton>

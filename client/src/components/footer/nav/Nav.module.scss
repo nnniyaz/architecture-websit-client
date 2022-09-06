@@ -28,4 +28,13 @@
             opacity: 1;
         }
     }
+
+    @media screen and (max-width: 900px) {
+        margin-right: 0;
+
+        div {
+            margin-left: 0;
+            margin-right: 40px;
+        }
+    }
 }

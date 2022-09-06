@@ -22,14 +22,14 @@
         background: #fff;
     }
 
-    > div {
+    >div {
         width: 100%;
 
         .focused {
             border: 2px solid rgba(0, 0, 0, 0.9);
 
-            ~ .title {
-                top: -5px;
+            ~.title {
+                top: -11px;
                 left: 5px;
                 opacity: 1;
             }
@@ -65,14 +65,14 @@
 }
 
 .error {
-    
+
     .title {
         color: #FF3333;
         opacity: 1;
         top: -5px;
     }
 
-    > div {
+    >div {
         .focused {
             border: 2px solid #FF3333;
         }

@@ -1,12 +1,21 @@
 .socials {
-    margin-top: 8px;
+    margin-top: 20px;
 
     a {
-        padding: 2px;
+        margin: 0 20px;
+        width: 25px;
+        height: 25px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &:first-child {
+            margin-left: 0;
+        }
     }
+
 
     img {
         width: 25px;
-        margin-left: 20px;
     }
 }

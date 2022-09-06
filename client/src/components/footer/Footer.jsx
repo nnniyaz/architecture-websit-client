@@ -4,15 +4,15 @@ import Nav from './nav/Nav'
 import Socials from './socials/Socials';
 
 const Footer = () => {
-    return (
-      <footer className={s.footer}>
-        <Logo color={"#000"} />
-        <div>
-          <Nav />
-          <Socials />
-        </div>
-      </footer>
-    );
+  return (
+    <footer className={s.footer}>
+      <Logo color={"#000"} />
+      <div className={s.details}>
+        <Nav />
+        <Socials />
+      </div>
+    </footer>
+  );
 }
 
 export default Footer
