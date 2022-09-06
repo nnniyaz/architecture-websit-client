@@ -8,12 +8,12 @@ import s4 from '../../../../assets/images/slider/4.jpg'
 import s5 from '../../../../assets/images/slider/5.jpg'
 import { Autoplay } from "swiper";
 
-const MySwiper = ({setSwiperRef}) => {
+const MySwiper = ({ setSwiperRef }) => {
   const slides = [s1, s2, s3, s4, s5]
 
   return (
     <Swiper
-    onSwiper={setSwiperRef}
+      onSwiper={setSwiperRef}
       spaceBetween={0}
       slidesPerView={1}
       speed={1000}

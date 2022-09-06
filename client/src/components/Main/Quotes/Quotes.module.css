@@ -1,11 +1,12 @@
 .page {
+    width: 100%;
     margin-top: 20px;
     padding-top: 50px;
 }
 
 .intro {
-    margin: 0 -150px;
     height: 75vh;
+    margin: 0 -50px;
     background-position: center;
     background-size: cover;
     color: white;

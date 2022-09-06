@@ -80,7 +80,6 @@
 }
 
 .projectName {
-    /* margin-top: 30px; */
     font-family: 'Inter', sans-serif;
     font-weight: 700;
     font-size: 30px;
@@ -110,14 +109,24 @@
 @media only screen and (max-width: 900px) {
     .cell {
         width: 100%;
+        margin-top: 40px;
+    }
+
+    .info {
+        padding: 0 20px;
     }
 
     .index {
+        font-size: 50px;
         padding-left: 0;
     }
 
     .projectName {
-        font-size: 25px;
+        font-size: 23px;
         margin-top: 0px;
+    }
+
+    .description {
+        font-size: 19px;
     }
 }
