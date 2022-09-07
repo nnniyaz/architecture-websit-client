@@ -9,6 +9,12 @@
 
         label {
             margin: 5px 0;
+
+            @media screen and (max-width: 320px) {
+                textarea {
+                    height: 100px;
+                }
+            }
         }
 
         .checkbox {
